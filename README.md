@@ -21,6 +21,8 @@ This task can't be a good example of LRU-cache usage.
 
 Calculate fibonacci number using LRU-cache and Splay tree cache algorithms.
 
+![fibonacci-count-results-table](screenshots/fibonacci-count-table.png)
+
 ![fibonacci-count-results-graph](screenshots/fibonacci-count-results-graph.png)
 
 The results demonstrate that the LRU cache is significantly more efficient than the Splay Tree cache for this task, reducing the time required to compute Fibonacci numbers by several times.

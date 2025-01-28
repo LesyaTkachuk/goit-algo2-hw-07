@@ -50,6 +50,17 @@ if __name__ == "__main__":
         )
         splay_tree_results.append((n, exec_time_splay_tree))
 
+    # build results table
+    print("========= FIBONACCI COUNT RESULTS ====================")
+    print(
+        f"{'Fibonacci number':<20} | {"LRU Cache Time (s)":<20} | {"Splay Tree Time (s)":<20} | "
+    )
+    for index, result in enumerate(lru_cache_results):
+        print(
+            f"{result[0]:<20} | {result[1]:<20.7f} | {splay_tree_results[index][1]:<20.7f}"
+        )
+    print("======================================================")
+
     # results visualization
     # extract Fibonacci numbers and times for each method
     lru_fib, lru_times = zip(*lru_cache_results)
